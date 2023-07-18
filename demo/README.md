@@ -39,7 +39,7 @@ predictor = SamPredictor(sam)
 Set the new image and export the embedding:
 
 ```
-image = cv2.imread('src/assets/dogs.jpg')
+image = cv2.imread('src/assets/data/dogs.jpg')
 predictor.set_image(image)
 image_embedding = predictor.get_image_embedding().cpu().numpy()
 np.save("dogs_embedding.npy", image_embedding)
